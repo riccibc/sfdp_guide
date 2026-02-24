@@ -235,6 +235,16 @@ footer {
   padding: 1.5rem 1rem 1rem;
 }
 
+.components-heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent, var(--cardinal));
+  opacity: 0.75;
+  margin-bottom: 0.85rem;
+}
+
 .section-block {
   background: var(--white);
   border: 1px solid var(--border);

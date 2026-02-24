@@ -426,10 +426,12 @@ function openCard(index) {
   const body = document.getElementById('detail-body');
   body.style.setProperty('--accent', `var(${card.accentVar})`);
 
+  const sectionHeadingHTML = `<h2 class="components-heading">Key Components and Teaching Behaviors</h2>`;
+
   if (card.custom === 'feedback') {
-    body.innerHTML = renderFeedbackBody();
+    body.innerHTML = sectionHeadingHTML + renderFeedbackBody();
   } else {
-    body.innerHTML = card.sections.map((s, i) => buildSectionHTML(s, i)).join('');
+    body.innerHTML = sectionHeadingHTML + card.sections.map((s, i) => buildSectionHTML(s, i)).join('');
   }
 
   // Footer
