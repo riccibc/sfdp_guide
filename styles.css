@@ -232,7 +232,7 @@ footer {
 .detail-body {
   max-width: 640px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 1rem;
+  padding: 1.25rem 1rem 1rem;
 }
 
 .components-heading {
@@ -242,7 +242,7 @@ footer {
   text-transform: uppercase;
   color: var(--accent, var(--cardinal));
   opacity: 0.75;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.4rem;
 }
 
 .section-block {

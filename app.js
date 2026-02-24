@@ -426,7 +426,10 @@ function openCard(index) {
   const body = document.getElementById('detail-body');
   body.style.setProperty('--accent', `var(${card.accentVar})`);
 
-  const sectionHeadingHTML = `<h2 class="components-heading">Key Components and Teaching Behaviors</h2>`;
+  const sectionLabel = card.custom === 'feedback'
+    ? 'Level of Feedback &amp; Teaching Behaviors'
+    : 'Key Components &amp; Teaching Behaviors';
+  const sectionHeadingHTML = `<h2 class="components-heading">${sectionLabel}</h2>`;
 
   if (card.custom === 'feedback') {
     body.innerHTML = sectionHeadingHTML + renderFeedbackBody();
