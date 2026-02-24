@@ -298,6 +298,8 @@ function renderFeedbackBody() {
       </div>
     </div>
 
+    <h2 class="components-heading">Level of Feedback &amp; Teaching Behaviors</h2>
+
     <div class="section-block">
       <div class="section-heading" tabindex="0" role="button" aria-expanded="true" aria-controls="fb-min">
         <h3>Minimal Feedback</h3>
@@ -426,13 +428,10 @@ function openCard(index) {
   const body = document.getElementById('detail-body');
   body.style.setProperty('--accent', `var(${card.accentVar})`);
 
-  const sectionLabel = card.custom === 'feedback'
-    ? 'Level of Feedback &amp; Teaching Behaviors'
-    : 'Key Components &amp; Teaching Behaviors';
-  const sectionHeadingHTML = `<h2 class="components-heading">${sectionLabel}</h2>`;
+  const sectionHeadingHTML = `<h2 class="components-heading">Key Components &amp; Teaching Behaviors</h2>`;
 
   if (card.custom === 'feedback') {
-    body.innerHTML = sectionHeadingHTML + renderFeedbackBody();
+    body.innerHTML = renderFeedbackBody();
   } else {
     body.innerHTML = sectionHeadingHTML + card.sections.map((s, i) => buildSectionHTML(s, i)).join('');
   }
