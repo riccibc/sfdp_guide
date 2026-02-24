@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8C1515" />
+  <meta name="description" content="Stanford Faculty Development Program – Pocket Guide for Medical Teachers" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SFDP Guide" />
+  <title>Stanford FDP Pocket Guide</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Home screen -->
+  <div id="home" class="screen active">
+    <header>
+      <div class="header-inner">
+        <div class="wordmark">
+          <span class="wordmark-stanford">STANFORD</span>
+          <span class="wordmark-fdp">Faculty Development Program</span>
+        </div>
+        <h1>Teaching Pocket Guide</h1>
+        <p class="subtitle">Seven core categories for effective medical teaching</p>
+      </div>
+    </header>
+
+    <main class="card-list" role="list">
+      <!-- Cards injected by JS -->
+    </main>
+
+    <footer>
+      <p>© Stanford Faculty Development Center for Medical Teachers<br>Stanford University School of Medicine</p>
+    </footer>
+  </div>
+
+  <!-- Detail screen -->
+  <div id="detail" class="screen" aria-hidden="true">
+    <div class="detail-header" id="detail-header">
+      <button class="back-btn" id="back-btn" aria-label="Back to home">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back
+      </button>
+      <h2 id="detail-title"></h2>
+      <p id="detail-desc"></p>
+    </div>
+    <div class="detail-body" id="detail-body"></div>
+    <div class="detail-footer" id="detail-footer"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

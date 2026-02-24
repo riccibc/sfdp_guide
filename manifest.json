@@ -1,0 +1,26 @@
+{
+  "name": "Stanford FDP Pocket Guide",
+  "short_name": "SFDP Guide",
+  "description": "Stanford Faculty Development Program – Pocket Guide for Medical Teachers",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#8C1515",
+  "theme_color": "#8C1515",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "medical"],
+  "lang": "en"
+}
